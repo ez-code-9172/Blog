@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger's World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        /* Parallax Effect */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            
+        }
+        html {
+            scroll-behavior: smooth;
+          }
+    </style>
+</head>
+
+<body class=" m-0 p-0">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center w-full h-16 bg-gray-800 text-orange-300 fixed top-0 shadow-lg px-6">
+        <h1 class="text-2xl font-bold hover:text-orange-400 flex items-center gap-2">
+            <i class="fa-solid fa-blog"></i> Blogger World
+        </h1>
+        <div>
+            <h1 class="text-xl text-orange-400 font-semibold hidden hover:text-2xl  md:block">
+                Explore the world <i class="fa-solid fa-globe text-blue-300"></i> </i>
+            </h1>
+        </div>
+        <ul class="hidden md:flex gap-6">
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-orange-400 ">
+                <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-orange-400">
+                <a href="#destination"><i class="fa-solid fa-map-location-dot"></i>
+                </i> Destination</a>
+            </li>
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-orange-400">
+                <a href="#blog"><i class="fa-solid fa-envelope"></i> Blog</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu Button -->
+        <button id="btn-menu" class="md:hidden text-white">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="parallax flex justify-center items-center text-center" style="background-image: url('nature.avif'); margin-top: 64px;">
+        <div class="bg-white  p-10 rounded-4xl  w-11/12 sm:w-1/2 lg:w-1/2">
+            <h1 class="text-5xl font-extrabold text-gray-800">Hello <p class="inline text-green-900"> 
+                Explorer's 🌍✈️ </p> 
+                <h2 class="mt-4 text-2xl"> I am <p class="inline text-amber-700 bold">Abdulla</p></h2></h1>
+
+            <p class="mt-4 text-lg text-gray-600 font-medium">
+                Join me as I explore the world, uncover hidden gems, and share unforgettable travel stories—one blog at a time! 🌎✨
+            </p>
+            <button class="mt-6 px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-yellow-700 transition duration-300">
+                <a href="#destination">Explore</a>
+            </button>
+        </div>
+    </section>
+    
+    <section id="destination" class="py-24 bg-gray-200 text-center">
+        <h2 class=" text-5xl font-extrabold mb-10">Destinations 🌍</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 container mx-auto px-8"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 container  mx-auto px-8" >
+            <div class="relative overflow-hidden  hover:scale-105">
+            <img src="paris.jpeg " alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Paris</div>
+
+        </div>
+
+        <div class="relative overflow-hidden  hover:scale-105">
+            <img src="bali.jpeg" alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Balli</div>
+        </div>
+
+        <div class="relative overflow-hidden  hover:scale-105">
+            <img src="beach.webp " alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Goa</div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- blog section -->
+     <section id="blog"  class="p-4 bg-gary-200 text-center">
+        <h1 class="p-4 m-4 text-5xl text-green-700 ">📝Latest Blog Post</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3  gap-10 container mx-auto-10px">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                <img src="beach.webp" class="w-50px mb-4 rounded-xl ">
+                <h3 class="text-2xl font-semibold">The Best Beach Escapes</h3>
+                <p class="text-gray-600 mt-2">A beach is a landform along the shoreline of an ocean, sea, 
+                    lake, or river, typically consisting of sand, pebbles, or rocks. It is one of the most 
+                    popular natural attractions, offering scenic beauty, recreational activities, and a relaxing
+                     environment.</p>
+                     <button class="bg-blue-700 p-2 mt-2 rounded-xl text-white hover:bg-green-300 hover:text-black">Read more </button>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                <img src="beach.webp" class="w-50px mb-4 rounded-xl ">
+                <h3 class="text-2xl font-semibold">The Best Beach Escapes</h3>
+                <p class="text-gray-600 mt-2">A beach is a landform along the shoreline of an ocean, sea, 
+                    lake, or river, typically consisting of sand, pebbles, or rocks. It is one of the most 
+                    popular natural attractions, offering scenic beauty, recreational activities, and a relaxing
+                     environment.</p>
+                     <button class="bg-blue-700 p-2 mt-2 rounded-xl text-white hover:bg-green-300 hover:text-black">Read more </button>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                <img src="beach.webp" class="w-50px mb-4 rounded-xl ">
+                <h3 class="text-2xl font-semibold">The Best Beach Escapes</h3>
+                <p class="text-gray-600 mt-2">A beach is a landform along the shoreline of an ocean, sea, 
+                    lake, or river, typically consisting of sand, pebbles, or rocks. It is one of the most 
+                    popular natural attractions, offering scenic beauty, recreational activities, and a relaxing
+                     environment.</p>
+                     <button class="bg-blue-700 p-2 mt-2 rounded-xl text-white hover:bg-green-300 hover:text-black">Read more </button>
+            </div>
+
+
+        </div>
+     </section>
+    
+</body>
+</html>
